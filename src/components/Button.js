@@ -1,6 +1,6 @@
 const Button = (props) => {
   return (
-    <button className="flex justify-center items-center  bg-gray-200 px-4 py-4 rounded-xl h-7">
+    <button className="flex justify-center bg-gray-200 px-6  py-1 rounded-xl">
       {props.text}
     </button>
   );

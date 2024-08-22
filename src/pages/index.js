@@ -5,12 +5,13 @@ import AboutMe from "../components/AboutMeText";
 import AboutMeText from "@/components/AboutMeData";
 import Button from "../components/Button";
 import IconSet from "../components/IconSet";
+import Experience from "../components/UpworkExp";
 const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
   return (
     //
-    <header className=" p-5 rounded-lg max-w-[400px] mx-auto relative">
+    <div className=" p-5 rounded-lg max-w-[400px] mx-auto relative">
       <div className="flex justify-between items-center mb-5">
         <h1 className="text-2xl font-bold w-20 font-rubikMono ">TOM</h1>
         <div className="flex flex-col items-center">
@@ -168,11 +169,9 @@ function Home() {
             </svg>
           </div>
         </div>
-        <div className="px-4 py-16">
+        <div className="px-4 py-16 bg-gray-50">
           <div className="flex  items-center flex-col justify-between">
-            <button className=" flex justify-center items-center rounded-xl px-1 py-4 w-28 h-7 bg-gray-200">
-              About me
-            </button>
+            <Button text="About me"></Button>
             <div>
               <Image
                 src="/about-me.png"
@@ -192,17 +191,28 @@ function Home() {
             reach out and say hello! I promise I don't bite 😉
           </div>
         </div>
-        <div className="mb-4">
+        <div className="my-16 ">
           <Button text="skills" />
         </div>
         <div className="flex items-center justify-center text-gray-600 text-lg">
           The skills, tools and technologies I am really good at:
         </div>
-        <div className="flex ">
+        <div>
           <IconSet />
         </div>
+        <div className="bg-gray-50 px-4 py-16">
+          <div className="flex flex-col items-center justify-center">
+            <div className="mb-4">
+              <Button text="experience" />
+            </div>
+            <p>Here is a quick summary of my most recent experiences:</p>
+          </div>
+          <div>
+            <Experience />
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   );
 }
 

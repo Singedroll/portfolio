@@ -11,6 +11,7 @@ import SassIcon from "./icons/SassIcon";
 import FigmaIcon from "./icons/FigmaIcon";
 import CypressIcon from "./icons/CypressIcon";
 import Storybookicon from "./icons/Storybookicon";
+import GitIcon from "./icons/GitIcon";
 
 const AppDatas = [
   { name: "Javascript", icon: <JavascriptIcon /> },
@@ -28,13 +29,14 @@ const AppDatas = [
   { name: "Figma", icon: <FigmaIcon /> },
   { name: "Cypress", icon: <CypressIcon /> },
   { name: "Storybook", icon: <Storybookicon /> },
+  { name: "Git", icon: <GitIcon /> },
 
   ,
 ];
 
 const IconSet = () => {
   return (
-    <div className="grid">
+    <div className="mt-6 grid gap-12 grid-cols-3 grid-rows-3">
       {AppDatas.map((AppData, index) => {
         return (
           <IconWithName
