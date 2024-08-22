@@ -4,6 +4,7 @@ import React from "react";
 import AboutMe from "../components/AboutMeText";
 import AboutMeText from "@/components/AboutMeData";
 import Button from "../components/Button";
+import IconSet from "../components/IconSet";
 const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
@@ -197,7 +198,9 @@ function Home() {
         <div className="flex items-center justify-center text-gray-600 text-lg">
           The skills, tools and technologies I am really good at:
         </div>
-        <div className="grid ">Placeholder</div>
+        <div className="flex ">
+          <IconSet />
+        </div>
       </div>
     </header>
   );
