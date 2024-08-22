@@ -9,7 +9,7 @@ import SocketIoIcon from "./icons/SocketIoIcon";
 import MongoDb from "./icons/MongoDb";
 import SassIcon from "./icons/SassIcon";
 import FigmaIcon from "./icons/FigmaIcon";
-import CypressIcon from "./icons/Cypressicon";
+import CypressIcon from "./icons/CypressIcon";
 import Storybookicon from "./icons/Storybookicon";
 import GitIcon from "./icons/GitIcon";
 
