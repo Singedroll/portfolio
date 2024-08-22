@@ -200,16 +200,34 @@ function Home() {
         <div>
           <IconSet />
         </div>
-        <div className="bg-gray-50 px-4 py-16">
-          <div className="flex flex-col items-center justify-center">
+        <div className=" bg-gray-50 px-4 py-16">
+          <div className="flex flex-col items-center justify-center self-stretch mb-6">
             <div className="mb-4">
               <Button text="experience" />
             </div>
-            <p>Here is a quick summary of my most recent experiences:</p>
+            <p className="text-center">
+              Here is a quick summary of my most recent experiences:
+            </p>
           </div>
-          <div>
-            <Experience />
+          <div className="flex flex-col gap-6">
+            <Experience
+              year="Nov 2021 - Present"
+              title="Sr. Frontend Developer"
+            />
+            <Experience year="Jul 2017 - Oct 2021" title="Team Lead" />
+            <Experience
+              year="Dec 2015 - May 2017"
+              title="Full Stack Developer"
+            />
           </div>
+        </div>
+        <div className="px-4 py-16 flex flex-col justify-center items-center">
+          <div className="my-16">
+            <Button text="Work" />
+          </div>
+          <p className="text-center text-lg font-normal text-gray-600">
+            Some of the noteworthy projects I have built:
+          </p>
         </div>
       </div>
     </div>
