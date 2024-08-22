@@ -1,5 +1,5 @@
 const AboutMeText = (props) => {
-  return <div className="">{props.text}</div>;
+  return <div>{props.text}</div>;
 };
 
 export default AboutMeText;
