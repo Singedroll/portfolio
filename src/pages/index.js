@@ -26,13 +26,12 @@ function Home() {
         {/* ---------Hero---------*/}
         <Hero />
       </div>
-      <div className="my-16 ">
+      <div className="my-16 md:px-20 md:py-24 ">
         <AboutmeSection />
       </div>
       {/* ---------Skills--------- */}
-
-      {/* <IconSet /> */}
-      {/* <div className=" bg-gray-50 px-4 py-16">
+      <IconSet />
+      <div className=" bg-gray-50 px-4 py-16">
         <div className="flex flex-col items-center justify-center self-stretch mb-6">
           <div className="mb-4">
             <Button text="experience" />
@@ -162,7 +161,7 @@ function Home() {
         <p className="text-gray-600 ">
           2024 | Greetings with ❤️️ from Ulaanbaatar
         </p>
-      </div> */}
+      </div>
     </div>
   );
 }
