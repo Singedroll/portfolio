@@ -12,6 +12,7 @@ import FigmaIcon from "./icons/FigmaIcon";
 import CypressIcon from "./icons/Cypressicon";
 import Storybookicon from "./icons/Storybookicon";
 import GitIcon from "./icons/GitIcon";
+import Button from "./Button";
 
 const AppDatas = [
   { name: "Javascript", icon: <JavascriptIcon /> },
@@ -36,16 +37,24 @@ const AppDatas = [
 
 const IconSet = () => {
   return (
-    <div className="mt-6 grid gap-12 grid-cols-3 grid-rows-3">
-      {AppDatas.map((AppData, index) => {
-        return (
-          <IconWithName
-            key={index}
-            iconName={AppData.name}
-            icon={AppData.icon}
-          />
-        );
-      })}
+    <div className="flex flex-col justify-center items-center">
+      <div>
+        <Button text="skills" />
+      </div>
+      <div className="flex items-center justify-center text-gray-600 text-lg">
+        The skills, tools and technologies I am really good at:
+      </div>
+      <div className="mt-6 grid gap-12 grid-cols-3 grid-rows-3">
+        {AppDatas.map((AppData, index) => {
+          return (
+            <IconWithName
+              key={index}
+              iconName={AppData.name}
+              icon={AppData.icon}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
