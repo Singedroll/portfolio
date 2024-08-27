@@ -30,7 +30,9 @@ function Home() {
         <AboutmeSection />
       </div>
       {/* ---------Skills--------- */}
+
       <IconSet />
+
       <div className=" bg-gray-50 px-4 py-16">
         <div className="flex flex-col items-center justify-center self-stretch mb-6">
           <div className="mb-4">

@@ -37,23 +37,27 @@ const AppDatas = [
 
 const IconSet = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div>
-        <Button text="skills" />
-      </div>
-      <div className="flex items-center justify-center text-gray-600 text-lg">
-        The skills, tools and technologies I am really good at:
-      </div>
-      <div className="mt-6 grid gap-12 grid-cols-3 grid-rows-3">
-        {AppDatas.map((AppData, index) => {
-          return (
-            <IconWithName
-              key={index}
-              iconName={AppData.name}
-              icon={AppData.icon}
-            />
-          );
-        })}
+    <div className="py-16 px-4 md:py-24 md:px-20">
+      <div className="flex flex-col justify-center items-center py-0 px-8 gap-12">
+        <div className="flex flex-col items-center gap-4">
+          <div>
+            <Button text="skills" />
+          </div>
+          <div className="flex items-center justify-center text-gray-600 text-lg">
+            The skills, tools and technologies I am really good at:
+          </div>
+        </div>
+        <div className="mt-6 grid gap-12 grid-cols-3 grid-rows-3">
+          {AppDatas.map((AppData, index) => {
+            return (
+              <IconWithName
+                key={index}
+                iconName={AppData.name}
+                icon={AppData.icon}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
