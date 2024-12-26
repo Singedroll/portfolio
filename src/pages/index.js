@@ -42,13 +42,18 @@ function Home() {
             Here is a quick summary of my most recent experiences:
           </p>
         </div>
-        <div className="flex flex-col gap-6">
-          <Experience
-            year="Nov 2021 - Present"
-            title="Sr. Frontend Developer"
-          />
-          <Experience year="Jul 2017 - Oct 2021" title="Team Lead" />
-          <Experience year="Dec 2015 - May 2017" title="Full Stack Developer" />
+        <div className="flex justify-center">
+          <div className="flex flex-col gap-6 w-[896px]">
+            <Experience
+              year="Nov 2021 - Present"
+              title="Sr. Frontend Developer"
+            />
+            <Experience year="Jul 2017 - Oct 2021" title="Team Lead" />
+            <Experience
+              year="Dec 2015 - May 2017"
+              title="Full Stack Developer"
+            />
+          </div>
         </div>
       </div>
       <div className="px-4 py-16 flex flex-col justify-center items-center">

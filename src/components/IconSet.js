@@ -23,7 +23,7 @@ const AppDatas = [
   { name: "Express", icon: <ExpressIcon /> },
   { name: "Nest.js", icon: <NestIcon /> },
   { name: "Socket.io", icon: <SocketIoIcon /> },
-  { name: "Socket.io", icon: <img src="icon-postgresql.png" /> },
+  { name: "PostgreSQL", icon: <img src="icon-postgresql.png" /> },
   { name: "MongoDb", icon: <MongoDb /> },
   { name: "Sass/Scss", icon: <SassIcon /> },
   { name: "Tailwindcss", icon: <img src="icon-tailwindcss.png" /> },
@@ -31,8 +31,6 @@ const AppDatas = [
   { name: "Cypress", icon: <CypressIcon /> },
   { name: "Storybook", icon: <Storybookicon /> },
   { name: "Git", icon: <GitIcon /> },
-
-  ,
 ];
 
 const IconSet = () => {
@@ -47,7 +45,7 @@ const IconSet = () => {
             The skills, tools and technologies I am really good at:
           </div>
         </div>
-        <div className="mt-6 grid gap-12 grid-cols-3 grid-rows-3">
+        <div className="mt-6 grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-8">
           {AppDatas.map((AppData, index) => {
             return (
               <IconWithName
@@ -62,4 +60,5 @@ const IconSet = () => {
     </div>
   );
 };
+
 export default IconSet;
